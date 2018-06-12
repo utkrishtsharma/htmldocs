@@ -1,0 +1,124 @@
+<html  >
+<head>
+<title>functions_program.html</title>
+
+</head>
+<body bgcolor = gray style= "border:4px double black; padding: 5px">
+	
+	<hr>
+</center>
+
+<img src="image.png" alt="image error" style="display: inline-block;margin-left: 500px;width:40px;height:40px;"/>
+<h3 style="text-align:center ; font-size: 250% ">Programmimg using C functions</h3>
+<h2 style="text-align:center ; font-size: 250% ">Sum of Natural Numbers Using Recursion :</h2>
+
+<pre style="font-size: 150% ">
+#include 
+int sum(int n);
+
+int main()
+{
+    int number, result;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &number);
+
+    result = sum(number);
+
+    printf("sum=%d", result);
+}
+
+int sum(int num)
+{
+    if (num!=0)
+        return num + sum(num-1); // sum() function calls itself
+    else
+        return num;
+}
+Output
+
+Enter a positive integer:
+3
+6
+
+
+</pre>
+<hr><hr><hr>
+<h2 style="text-align:center ; font-size: 250% ">No arguments passed and no return Value :</h2>
+
+<pre style="font-size: 150% ">
+#include 
+
+void checkPrimeNumber();
+
+int main()
+{
+    checkPrimeNumber();    // no argument is passed to prime()
+    return 0;
+}
+
+// return type of the function is void becuase no value is returned from the function
+void checkPrimeNumber()
+{
+    int n, i, flag=0;
+
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+
+    for(i=2; i <= n/2; ++i)
+    {
+        if(n%i == 0)
+        {
+            flag = 1;
+        }
+    }
+    if (flag == 1)
+        printf("%d is not a prime number.", n);
+    else
+        printf("%d is a prime number.", n);
+}
+
+
+</pre>
+<hr><hr><hr>
+<h2 style="text-align:center ; font-size: 250% ">Program to convert binary number to decimal :</h2>
+
+<pre style="font-size: 150% ">
+#include 
+#include 
+int convertBinaryToDecimal(long long n);
+
+int main()
+{
+    long long n;
+    printf("Enter a binary number: ");
+    scanf("%lld", &n);
+    printf("%lld in binary = %d in decimal", n, convertBinaryToDecimal(n));
+    return 0;
+}
+
+int convertBinaryToDecimal(long long n)
+{
+    int decimalNumber = 0, i = 0, remainder;
+    while (n!=0)
+    {
+        remainder = n%10;
+        n /= 10;
+        decimalNumber += remainder*pow(2,i);
+        ++i;
+    }
+    return decimalNumber;
+}
+Output
+
+Enter a binary number: 110110111
+110110111 in binary = 439
+
+
+</pre>
+<hr><hr><hr>
+
+  
+
+
+</body>

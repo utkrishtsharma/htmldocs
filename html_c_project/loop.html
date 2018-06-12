@@ -1,0 +1,120 @@
+<html  >
+<head>
+<title>loops.html</title>
+
+</head>
+<body bgcolor = gray style= "border:4px double black; padding: 5px">
+	
+	<hr>
+</center>
+
+<img src="image.png" alt="image error" style="display: inline-block;margin-left: 500px;width:40px;height:40px;"/>
+<h3 style="text-align:center ; font-size: 250% ">C Loops </h3>
+<pre style="font-size: 150% ">
+    You may encounter situations, when a block of code needs to be executed several number of times.
+     In general, statements are executed sequentially: The first statement in a function is executed 
+     first, followed by the second, and so on.
+
+Programming languages provide various control structures that allow for more complicated execution paths.
+
+A loop statement allows us to execute a statement or group of statements multiple times. Given below is 
+the general form of a loop statement in most of the programming languages âˆ’
+
+Loop Architecture C programming language provides the following types of loops to handle looping requirements.
+
+Sr.No.  Loop Type & Description 1   while loop Repeats a statement or group of statements while a given 
+condition is true. It tests the condition before executing the loop body.
+
+2   for loop Executes a sequence of statements multiple times and abbreviates the code that manages the 
+loop variable.
+
+3   do...while loop It is more like a while statement, except that it tests the condition at the end of 
+the loop body.
+
+Loop Control Statements Loop control statements change execution from its normal sequence. When execution 
+leaves a scope, all automatic objects that were created in that scope are destroyed.
+
+C supports the following control statements.
+
+Sr.No.  Control Statement & Description 1   break statement Terminates the loop or switch statement and transfers
+ execution to the statement immediately following the loop or switch.
+
+2   continue statement Causes the loop to skip the remainder of its body and immediately retest its condition prior
+ to reiterating.
+
+3   goto statement Transfers control to the labeled statement.
+
+The Infinite Loop A loop becomes an infinite loop if a condition never becomes false. The for loop is traditionally 
+used for this purpose. Since none of the three expressions that form the 'for' loop are required, you can make an 
+endless loop by leaving the conditional expression empty.
+
+</pre>
+
+
+
+<pre>
+ <hr>
+ <hr>
+ <hr>
+ <h3 style="text-align:center ; font-size: 200% ">For loop </h3>
+ <pre style="font-size: 150% ">
+
+ A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute 
+ a specific number of times.
+
+Syntax The syntax of a for loop in C programming language is âˆ’
+
+for ( init; condition; increment ) { statement(s); }
+
+Here is the flow of control in a 'for' loop âˆ’
+
+The init step is executed first, and only once. This step allows you to declare and initialize any loop control 
+variables. You are not required to put a statement here, as long as a semicolon appears.
+
+Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the 
+loop does not execute and the flow of control jumps to the next statement just after the 'for' loop.
+
+After the body of the 'for' loop executes, the flow of control jumps back up to the increment statement. This statement 
+allows you to update any loop control variables. This statement can be left blank, as long as a semicolon appears after the
+ condition.
+
+The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop, then 
+increment step, and then again condition). After the condition becomes false, the 'for' loop terminates.
+</pre>
+	<hr><hr><hr>
+    <h3 style="text-align:center ; font-size: 200% ">While Loop </h3>
+     <pre style="font-size: 150% ">
+    A while loop in C programming repeatedly executes a target statement as long as a given condition is true.
+
+Syntax The syntax of a while loop in C programming language is âˆ’
+
+while(condition) { statement(s); }
+
+Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true 
+is any nonzero value. The loop iterates while the condition is true.
+
+When the condition becomes false, the program control passes to the line immediately following the loop.
+</pre>
+<hr>
+<hr>
+<hr>
+<h3 style="text-align:center ; font-size: 200% ">Do While Loop</h3>
+ <pre style="font-size: 150% ">
+    Unlike for and while loops, which test the loop condition at the top of the loop, the do...while loop in C 
+    programming checks its condition at the bottom of the loop.
+
+A do...while loop is similar to a while loop, except the fact that it is guaranteed to execute at least one time.
+
+Syntax The syntax of a do...while loop in C programming language is âˆ’
+
+do { statement(s); } while( condition );
+
+Notice that the conditional expression appears at the end of the loop, so the statement(s) in the loop executes once
+ before the condition is tested.
+
+If the condition is true, the flow of control jumps back up to do, and the statement(s) in the loop executes again. 
+This process repeats until the given condition becomes false.
+</pre>
+<hr>
+<hr>
+</body>

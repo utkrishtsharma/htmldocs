@@ -1,0 +1,58 @@
+<html  >
+<head>
+<title>file_handling.html</title>
+
+</head>
+<body bgcolor = gray style= "border:4px double black; padding: 5px">
+	
+	<hr>
+</center>
+
+<img src="image.png" alt="image error" style="display: inline-block;margin-left: 500px;width:40px;height:40px;"/>
+<h3 style="text-align:center ; font-size: 250% ">File Handling in C</h3>
+<p style="font-size: 150% ">File Handling in c language is used to open, read, write, search or close file. It is used for permanent storage.</p>
+
+<h2 style="text-align:center ; font-size: 250% ">Advantage of File :</h2>
+
+<pre style="font-size: 150% ">
+It will contain the data even after program exit. Normally we use variable or array to store data, but data is lost after program exit. Variables and arrays are non-permanent storage medium whereas file is permanent storage medium.
+
+Functions for file handling There are many functions in C library to open, read, write, search and close file. A list of file functions are given below:
+
+No. Function    Description
+1   fopen() opens new or existing file
+2   fprintf()   write data into file
+3   fscanf()    reads data from file
+4   fputc() writes a character into file
+5   fgetc() reads a character from file
+6   fclose()    closes the file
+7   fseek() sets the file pointer to given position
+8   fputw() writes an integer to file
+9   fgetw() reads an integer from file
+10  ftell() returns current position
+11  rewind()    sets the file pointer to the beginning of the file
+Opening File: fopen()
+The fopen() function is used to open a file. The syntax of fopen() function is given below:
+
+FILE *fopen( const char * filename, const char * mode ); 
+You can use one of the following modes in the fopen() function.
+
+Mode    Description
+r   opens a text file in read mode
+w   opens a text file in write mode
+a   opens a text file in append mode
+r+  opens a text file in read and write mode
+w+  opens a text file in read and write mode
+a+  opens a text file in read and write mode
+rb  opens a binary file in read mode
+wb  opens a binary file in write mode
+ab  opens a binary file in append mode
+rb+ opens a binary file in read and write mode
+wb+ opens a binary file in read and write mode
+ab+ opens a binary file in read and write mode
+
+</pre>
+<hr><hr><hr>
+
+
+</body>
